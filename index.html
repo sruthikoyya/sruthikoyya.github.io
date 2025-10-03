@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koyya Sruthi - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      background: #121212;
+      color: #e0e0e0;
+    }
+
+    /* Sidebar */
+    nav {
+      width: 250px;
+      background: #1e1e2f;
+      height: 100vh;
+      position: fixed;
+      padding-top: 40px;
+      box-shadow: 2px 0 8px rgba(0, 0, 0, 0.4);
+    }
+    nav img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: block;
+      margin: auto;
+      border: 3px solid #fff;
+    }
+    nav h2 {
+      text-align: center;
+      margin: 15px 0;
+      font-size: 1.5em;
+      color: #fff;
+    }
+    nav p {
+      text-align: center;
+      font-size: 0.9em;
+      color: #bbb;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+    }
+    nav ul li {
+      text-align: center;
+      margin: 15px 0;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #bbb;
+      font-size: 1em;
+      padding: 8px 20px;
+      display: inline-block;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      background: #007acc;
+      color: #fff;
+    }
+
+    /* Main content */
+    main {
+      margin-left: 250px;
+      padding: 30px;
+      max-width: 900px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+      color: #fff;
+    }
+    .card {
+      background: #1e1e2f;
+      margin: 15px 0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+    .card a {
+      color: #4da3ff;
+      text-decoration: none;
+    }
+    .card a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 15px;
+      color: #aaa;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <nav>
+    <img src="your-photo.jpg" alt="Your Photo">
+    <h2>Koyya Sruthi</h2>
+    <p>AI/ML Enthusiast</p>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#internship">Internship</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>I am a Computer Science undergraduate passionate about AI with skills in Machine Learning, Deep Learning, Computer Vision, and Generative AI. I enjoy building AI-driven solutions and exploring research ideas to solve real-world problems.</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <p><b>B.Tech in Computer Science and Engineering</b>, RGUKT Srikakulam (2022–2026), GPA: 9.22/10</p>
+        <p><b>Pre-University Course (PUC)</b>, RGUKT Srikakulam (2020–2022), CGPA: 9.68/10</p>
+        <p><b>10th Grade</b>, ZPHS Dharmapuram (2020), CGPA: 10/10</p>
+      </div>
+    </section>
+
+    <section id="internship">
+      <h2>Internship</h2>
+      <div class="card">
+        <p><b>Summer Research Intern, NIT Rourkela (May 2025 – July 2025)</b></p>
+        <ul>
+          <li>Worked in the Pattern Recognition and Image Processing Lab under Prof. Samit Ari.</li>
+          <li>Implemented advanced CNN architectures: U-Net, CBAM-U-Net, Attention Gate U-Net, ResNet, and SE networks.</li>
+          <li>Focused on semantic segmentation and object localization with real-world datasets.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research Publication</h2>
+      <div class="card">
+        <p>📄 <b>“Attention-Driven U-Net for Improved Water Body Segmentation from Satellite Imagery”</b> – Accepted at IEEE CICN 2025.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Accessibility Assistant for Visually Impaired (Vision Mate)</h3>
+        <p>AI assistant providing spoken scene descriptions using DETR and OpenCV.</p>
+        <a href="YOUR_GITHUB_LINK_1">🔗 GitHub Repo</a>
+      </div>
+      <div class="card">
+        <h3>Diabetic Retinopathy Detection</h3>
+        <p>CNN-based classification system for fundus images to detect diabetic retinopathy.</p>
+        <a href="YOUR_GITHUB_LINK_2">🔗 GitHub Repo</a>
+      </div>
+      <div class="card">
+        <h3>Attention-Driven U-Net for Water Body Segmentation</h3>
+        <p>Enhanced U-Net with residual & attention blocks, achieving IoU 81.29%.</p>
+        <a href="YOUR_GITHUB_LINK_3">🔗 GitHub Repo</a>
+      </div>
+      <div class="card">
+        <h3>Telugu Palm Leaf Image Binarization</h3>
+        <p>ResUNetCSDA model achieving 97.74 F-measure for manuscript preservation.</p>
+        <a href="YOUR_GITHUB_LINK_4">🔗 GitHub Repo</a>
+      </div>
+      <div class="card">
+        <h3>Palm Leaf Manuscript Segmentation (Ongoing)</h3>
+        <p>Self-supervised learning with Barlow Twins & PCA visualization.</p>
+        <a href="YOUR_GITHUB_LINK_5">🔗 GitHub Repo</a>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="card">
+        <ul>
+          <li>ML, NLP, and MLOps – Udemy (Krish Naik)</li>
+          <li>Machine Learning to Generative AI – IBM SkillsBuild</li>
+          <li>Deep Learning for Computer Vision – NPTEL IITH</li>
+          <li>Deep Learning – NPTEL IIT Ropar</li>
+          <li>Introduction to LLMs – NPTEL IITD/IITB</li>
+          <li>Computer Vision – NPTEL IITK (Ongoing)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements & Activities</h2>
+      <div class="card">
+        <ul>
+          <li>Best Student Award (twice) for academic excellence.</li>
+          <li>Ranked 2172 among 90,000 aspirants in RGUKT Entrance Test.</li>
+          <li>Executive Member, Coding Club, RGUKT Srikakulam.</li>
+          <li>NSS Volunteer – active in community service.</li>
+          <li>Hackathon participant, applying ML/DL in real-world problems.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>📍 Srikakulam, Andhra Pradesh</p>
+        <p>📧 <a href="mailto:sruthikoyya1918@gmail.com">sruthikoyya1918@gmail.com</a></p>
+        <p>📞 +91-7997240107</p>
+        <p><a href="https://linkedin.com/in/koyya-sruthi-a33371280">LinkedIn</a> | 
+           <a href="https://github.com/sruthikoyya">GitHub</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Koyya Sruthi | Portfolio</p>
+    </footer>
+  </main>
+
+</body>
+</html>
+

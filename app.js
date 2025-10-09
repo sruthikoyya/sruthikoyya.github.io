@@ -432,3 +432,19 @@ window.PortfolioApp = {
     toggleMobileNav,
     showNotification
 };
+function createMobileNavToggle() {
+  let toggle = document.querySelector('.mobile-nav-toggle');
+  if (!toggle) {
+    toggle = document.createElement('button');
+    toggle.className = 'mobile-nav-toggle';
+    toggle.innerHTML = '<i class="fas fa-bars"></i>';
+    document.body.appendChild(toggle);
+  }
+
+  toggle.addEventListener('click', function () {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('active');
+    const icon = toggle.querySelector('i');
+    icon.className = sidebar.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+  });
+}

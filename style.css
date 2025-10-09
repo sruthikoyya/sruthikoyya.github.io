@@ -1654,3 +1654,48 @@ body {
   overflow: hidden;
 }
 
+/* Mobile Navigation Styles */
+.mobile-nav-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+  box-shadow: var(--shadow-md);
+}
+
+.mobile-nav-toggle i {
+  pointer-events: none;
+}
+
+/* Show button on small screens */
+@media (max-width: 768px) {
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: -300px;
+    transition: left 0.3s ease;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding-top: 80px;
+  }
+}
+
